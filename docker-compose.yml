@@ -5,5 +5,5 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 53:53
+      - 53:53/udp
     command: ./dnsseed -h $HOST -n $NS -m $MAIL
