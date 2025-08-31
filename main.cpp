@@ -418,7 +418,14 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed1.lbry.io", "dnsseed2.lbry.io", "dnsseed3.lbry.io", ""};
+static const string mainnet_seeds[] = {"seed.s1.lbry.network",
+                                       "s1.lbry.network",
+                                       "seed.lbry.se",
+                                       "seed.allaboutlbc.com",
+                                       "dnsseed1.lbry.com",
+                                       "dnsseed2.lbry.com",
+                                       "dnsseed3.lbry.com",
+                                       ""};
 static const string testnet_seeds[] = {"testdnsseed1.lbry.io",
                                        "testdnsseed2.lbry.io",
                                        ""};

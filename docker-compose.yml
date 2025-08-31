@@ -1,0 +1,9 @@
+services:
+  seeder:
+    container_name: seeder
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 53:53
+    command: ./dnsseed -h $HOST -n $NS -m $MAIL
